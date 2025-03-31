@@ -81,7 +81,7 @@ void extraction(json_value root) {
         // 파라미터 분석
         json_value args = json_get(func_type, "args");
         if (args.type != JSON_OBJECT) {
-            printf("  Parameters: 없음\n\n");
+            printf("  Parameters: 없음\n");
         }
         else {
             json_value params = json_get(args, "params");
